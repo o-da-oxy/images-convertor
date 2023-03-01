@@ -1,0 +1,9 @@
+name: Main Workflow
+#на какой триггер реагировать
+on: workflow_dispatch #запуск в ручном режиме
+jobs:
+  print: #имя джобы
+    runs-on: ubuntu latest
+    steps:
+      - name: Print to console
+        run: echo GitHub Actions! #вывод
